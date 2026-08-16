@@ -79,7 +79,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
   padding: 18px 24px;
   max-width: var(--container);
   margin: 0 auto;
+  position: relative;
+  gap: 16px;
 }
+
+.header-actions { display: flex; align-items: center; gap: 12px; }
 
 .logo {
   display: flex;
@@ -196,7 +200,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 .hero h1 {
   font-family: 'Big Shoulders Display', sans-serif;
   font-weight: 900;
-  font-size: clamp(2.4rem, 4.2vw, 3.8rem);
+  font-size: clamp(2rem, 3.4vw, 3.1rem);
   text-transform: uppercase;
   line-height: 1.02;
   letter-spacing: -0.005em;
@@ -488,6 +492,143 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 .breadcrumb { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 18px; max-width: 760px; margin-left: auto; margin-right: auto; font-weight: 600; }
 .breadcrumb a { color: var(--blue); }
 
+/* ============ Mobile nav toggle ============ */
+.nav-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.nav-toggle span, .nav-toggle span::before, .nav-toggle span::after {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--ink);
+  position: relative;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.nav-toggle span::before, .nav-toggle span::after { content: ''; position: absolute; left: 0; }
+.nav-toggle span::before { top: -7px; }
+.nav-toggle span::after { top: 7px; }
+.nav-toggle[aria-expanded="true"] span { background: transparent; }
+.nav-toggle[aria-expanded="true"] span::before { transform: translateY(7px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span::after { transform: translateY(-7px) rotate(-45deg); }
+
+/* ============ Breadcrumb-style eyebrow link row (used for topic hierarchy signposting) ============ */
+.topic-trail { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 0.85rem; color: var(--text-secondary); font-weight: 600; margin-bottom: 14px; }
+.topic-trail .current { color: var(--blue); }
+
+/* ============ Benefit cards (quick-scan grid, distinct from the detailed spec-list) ============ */
+.benefit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.benefit-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 26px 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.benefit-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.benefit-card .b-icon {
+  width: 44px; height: 44px;
+  border-radius: var(--radius-sm);
+  background: var(--frost);
+  color: var(--blue);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 14px;
+}
+.benefit-card h3 { font-size: 1.02rem; margin-bottom: 6px; }
+.benefit-card p { color: var(--text-secondary); font-size: 0.9rem; font-weight: 500; }
+
+/* ============ Comparison table ============ */
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius-md); }
+.compare-table { width: 100%; border-collapse: collapse; min-width: 640px; }
+.compare-table caption { text-align: left; padding: 16px 20px; font-weight: 700; color: var(--text-secondary); font-size: 0.85rem; }
+.compare-table th, .compare-table td { padding: 16px 20px; text-align: left; border-bottom: 1px solid var(--line); font-size: 0.94rem; }
+.compare-table thead th { background: var(--frost); font-weight: 800; color: var(--ink); white-space: nowrap; }
+.compare-table tbody th { font-weight: 700; color: var(--ink); white-space: nowrap; }
+.compare-table tbody tr:last-child td, .compare-table tbody tr:last-child th { border-bottom: none; }
+.compare-table td.yes { color: var(--success); font-weight: 700; }
+.compare-table td.no { color: var(--text-secondary); }
+.compare-table tr.featured { background: rgba(0, 51, 122, 0.04); }
+.compare-table tbody tr:hover { background: var(--frost); }
+.compare-table th.featured-col, .compare-table td:nth-child(3) { background: rgba(0, 51, 122, 0.05); }
+.compare-table thead th.featured-col { background: var(--blue); color: var(--white); }
+
+/* Simple two-column comparison (IPTV Suomi vs Nordic IPTV) */
+.vs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.vs-card { border: 1.5px solid var(--line); border-radius: var(--radius-md); padding: 28px; }
+.vs-card.primary { border-color: var(--blue); background: var(--frost); }
+.vs-card h3 { font-size: 1.15rem; margin-bottom: 16px; color: var(--blue); }
+.vs-card ul { display: flex; flex-direction: column; gap: 10px; }
+.vs-card li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.94rem; color: var(--text-secondary); font-weight: 500; }
+.vs-card li svg { flex-shrink: 0; color: var(--blue); margin-top: 3px; }
+
+/* ============ Device grid ============ */
+.device-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; }
+.device-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 22px 18px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.device-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-sm); border-color: var(--blue); }
+.device-card .d-icon { width: 40px; height: 40px; margin: 0 auto 12px; color: var(--blue); display: flex; align-items: center; justify-content: center; }
+.device-card span { font-size: 0.9rem; font-weight: 700; color: var(--ink); }
+
+/* ============ Numbered install steps (a genuine sequence, unlike the feature list) ============ */
+.step-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; counter-reset: step; }
+.step-card { position: relative; padding: 28px 22px 22px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-md); }
+.step-card::before {
+  counter-increment: step;
+  content: counter(step);
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: var(--white);
+  background: var(--blue);
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 14px;
+}
+.step-card h3 { font-size: 0.98rem; margin-bottom: 6px; }
+.step-card p { color: var(--text-secondary); font-size: 0.88rem; font-weight: 500; }
+
+/* ============ Troubleshooting cards ============ */
+.trouble-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.trouble-card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 22px 24px; }
+.trouble-card h3 { font-size: 0.98rem; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+.trouble-card h3 svg { color: var(--ember); flex-shrink: 0; }
+.trouble-card p { color: var(--text-secondary); font-size: 0.9rem; font-weight: 500; }
+
+/* ============ Trust / commitments (replaces fabricated reviews) ============ */
+.trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+.trust-card { padding: 4px 0 4px 20px; border-left: 3px solid var(--blue); }
+.trust-card h3 { font-size: 1rem; margin-bottom: 6px; }
+.trust-card p { color: var(--text-secondary); font-size: 0.92rem; font-weight: 500; }
+
+/* ============ Pricing cards ============ */
+.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; align-items: stretch; }
+.price-card { background: var(--white); border: 1.5px solid var(--line); border-radius: var(--radius-md); padding: 32px 28px; display: flex; flex-direction: column; position: relative; }
+.price-card.recommended { border-color: var(--blue); box-shadow: var(--shadow-md); }
+.price-card .price-badge {
+  position: absolute; top: -13px; left: 28px;
+  background: var(--blue); color: var(--white);
+  font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em;
+  padding: 5px 12px; border-radius: 999px;
+}
+.price-card h3 { font-size: 1.1rem; margin-bottom: 4px; }
+.price-card .price-note { color: var(--text-secondary); font-size: 0.88rem; font-weight: 600; margin-bottom: 18px; }
+.price-card ul { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; flex: 1; }
+.price-card li { display: flex; align-items: flex-start; gap: 9px; font-size: 0.92rem; color: var(--ink); font-weight: 500; }
+.price-card li svg { flex-shrink: 0; color: var(--success); margin-top: 3px; }
+
 /* ============ Responsive ============ */
 @media (max-width: 980px) {
   .hero-inner { grid-template-columns: 1fr; min-height: 0; }
@@ -496,5 +637,26 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
   .stat-strip-inner { grid-template-columns: repeat(2, 1fr); }
   .grid-3, .footer-grid { grid-template-columns: 1fr; }
   .spec-row { grid-template-columns: 1fr; gap: 8px; }
-  .nav-links { display: none; }
+  .vs-grid { grid-template-columns: 1fr; }
+
+  .nav-toggle { display: flex; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 8px 24px 16px;
+    box-shadow: var(--shadow-md);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { width: 100%; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .nav-links a:last-child { border-bottom: none; }
+  .header-cta .btn-label-long { display: none; }
+  .header-cta .btn-label-short { display: inline; }
 }
+
+.btn-label-short { display: none; }
