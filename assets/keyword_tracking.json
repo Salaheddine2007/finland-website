@@ -1,0 +1,27 @@
+{
+  "next_index": 0,
+  "source": "assets/iptv_broad-match_fi_2026-05-16.xlsx, deduped against tilaaiptv.com's keyword_tracking.json (72 already-covered terms) and iptvviking.tv's cross-site terms (nordic iptv, iptv nordic, nordic one iptv)",
+  "keywords": [
+    { "keyword": "android iptv", "volume": 30, "kd": 0, "status": "pending" },
+    { "keyword": "best iptv apk", "volume": 30, "kd": 0, "status": "pending" },
+    { "keyword": "dna tv iptv", "volume": 30, "kd": 0, "status": "pending" },
+    { "keyword": "paras iptv", "volume": 140, "kd": 7, "status": "pending" },
+    { "keyword": "iptv laillisuus", "volume": 320, "kd": 12, "status": "pending" },
+    { "keyword": "iptv digiboksi", "volume": 260, "kd": 12, "status": "pending" },
+    { "keyword": "suomi iptv kokemuksia", "volume": 110, "kd": 20, "status": "pending" },
+    { "keyword": "iptv boksi gigantti", "volume": 140, "kd": 25, "status": "pending" },
+    { "keyword": "telia iptv", "volume": 140, "kd": 25, "status": "pending" },
+    { "keyword": "smart iptv", "volume": 320, "kd": 26, "status": "pending" },
+    { "keyword": "suomen iptv kanavat", "volume": 50, "kd": 26, "status": "pending" },
+    { "keyword": "iptv smarters pro", "volume": 1000, "kd": 27, "status": "pending" },
+    { "keyword": "iptv smarters", "volume": 720, "kd": 27, "status": "pending" },
+    { "keyword": "dna iptv", "volume": 110, "kd": 31, "status": "pending" },
+    { "keyword": "iptv suomi kanavat", "volume": 50, "kd": 31, "status": "pending" },
+    { "keyword": "iptv dna", "volume": 110, "kd": 33, "status": "pending" },
+    { "keyword": "iptv elisa", "volume": 140, "kd": 34, "status": "pending" },
+    { "keyword": "iptv smarters player", "volume": 260, "kd": 40, "status": "pending" },
+    { "keyword": "player iptv windows", "volume": 70, "kd": 49, "status": "pending" },
+    { "keyword": "iptv application", "volume": 50, "kd": 59, "status": "pending" },
+    { "keyword": "iptv app", "volume": 70, "kd": 65, "status": "pending" }
+  ]
+}
