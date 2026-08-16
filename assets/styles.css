@@ -164,11 +164,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   align-items: stretch;
-  min-height: 560px;
+  min-height: 420px;
 }
 
 .hero-copy {
-  padding: 56px 40px 64px 0;
+  padding: 52px 40px 52px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,14 +196,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 .hero h1 {
   font-family: 'Big Shoulders Display', sans-serif;
   font-weight: 900;
-  font-size: clamp(3rem, 6.4vw, 5.6rem);
+  font-size: clamp(2.4rem, 4.2vw, 3.8rem);
   text-transform: uppercase;
-  line-height: 0.92;
-  letter-spacing: -0.01em;
-  margin-bottom: 22px;
+  line-height: 1.02;
+  letter-spacing: -0.005em;
+  margin-bottom: 20px;
 }
 
-.hero h1 span { color: var(--blue); display: block; }
+.hero h1 span { color: var(--blue); }
 .hero h1 .accent-dot { color: var(--ember); }
 
 .hero p.lead {
@@ -221,16 +221,17 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 .trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.86rem; color: var(--text-secondary); font-weight: 600; }
 .trust-item svg { color: var(--blue); flex-shrink: 0; }
 
-/* Signature: the Finnish flag's off-center cross, abstracted into large flat blocks that bleed off the hero edge */
+/* Signature: the Finnish flag's off-center cross, abstracted into a white field with blue bars (correct flag orientation — white base, blue cross) */
 .hero-mark {
   position: relative;
   overflow: hidden;
+  border-left: 1px solid var(--line);
 }
 
 .cross-block {
   position: absolute;
   inset: 0;
-  background: var(--blue);
+  background: var(--white);
 }
 
 .cross-block .bar-v {
@@ -238,7 +239,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
   top: 0; bottom: 0;
   left: 38%;
   width: 15%;
-  background: var(--white);
+  background: var(--blue);
 }
 
 .cross-block .bar-h {
@@ -246,20 +247,21 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
   left: 0; right: 0;
   top: 40%;
   height: 15%;
-  background: var(--white);
+  background: var(--blue);
 }
 
 .cross-block .chip {
   position: absolute;
   background: var(--ember);
+  left: 38%;
+  width: 15%;
+  top: 40%;
+  height: 15%;
 }
-.cross-block .chip-1 { top: 12%; right: 10%; width: 15%; height: 15%; }
-.cross-block .chip-2 { bottom: 16%; left: 6%; width: 10%; height: 18%; }
 
 .hero-mark .bar-v, .hero-mark .bar-h { animation: reveal-bar 0.7s cubic-bezier(.16,1,.3,1) both; }
 .hero-mark .bar-h { animation-delay: 0.15s; }
-.hero-mark .chip-1 { animation: fade-in 0.5s ease 0.5s both; }
-.hero-mark .chip-2 { animation: fade-in 0.5s ease 0.65s both; }
+.hero-mark .chip { animation: fade-in 0.4s ease 0.55s both; }
 
 @keyframes reveal-bar { from { transform: scaleY(0); opacity: 0; } to { transform: scaleY(1); opacity: 1; } }
 .bar-h { transform-origin: left center; }
@@ -269,7 +271,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 @keyframes fade-in { from { opacity: 0; transform: scale(0.7); } to { opacity: 1; transform: scale(1); } }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-mark .bar-v, .hero-mark .bar-h, .hero-mark .chip-1, .hero-mark .chip-2 { animation: none; }
+  .hero-mark .bar-v, .hero-mark .bar-h, .hero-mark .chip { animation: none; }
 }
 
 .hero-stat-strip {
