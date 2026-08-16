@@ -219,6 +219,43 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
   align-items: center;
 }
 
+/* ============ Hero logo scatter (channel brand wall) ============ */
+.hero-logos { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.logo-chip {
+  position: absolute;
+  width: 92px;
+  height: 92px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  pointer-events: auto;
+  transition: transform 0.25s ease;
+}
+.logo-chip:hover { transform: scale(1.06) rotate(0deg) !important; }
+.logo-chip img { width: 100%; height: 100%; object-fit: contain; }
+
+.logo-chip.p1 { top: 4%;  left: 6%;  transform: rotate(-7deg); }
+.logo-chip.p2 { top: 2%;  left: 24%; transform: rotate(5deg); }
+.logo-chip.p3 { top: 3%;  right: 23%; transform: rotate(-4deg); }
+.logo-chip.p4 { top: 5%;  right: 5%; transform: rotate(6deg); }
+.logo-chip.p5 { top: 42%; left: 3%;  transform: rotate(6deg); }
+.logo-chip.p6 { top: 70%; left: 9%;  transform: rotate(-5deg); }
+.logo-chip.p7 { top: 40%; right: 4%; transform: rotate(-6deg); }
+.logo-chip.p8 { top: 68%; right: 10%; transform: rotate(5deg); }
+
+@media (max-width: 1100px) {
+  .logo-chip { width: 76px; height: 76px; padding: 12px; }
+}
+
+@media (max-width: 900px) {
+  .hero-logos { display: none; }
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -285,7 +322,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 
 .section-head { max-width: 640px; margin: 0 0 44px; }
 .section-head.center { text-align: center; margin-left: auto; margin-right: auto; }
-.section-head .eyebrow {
+.eyebrow {
   color: var(--sky3);
   font-weight: 600;
   font-size: 0.8rem;
@@ -328,6 +365,82 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 .topic-trail ol { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; list-style: none; font-size: 0.85rem; color: var(--text2); font-weight: 500; }
 .topic-trail li { display: flex; align-items: center; gap: 8px; }
 .topic-trail .current { color: var(--sky3); font-weight: 600; }
+
+/* ============ Split section (text | visual, alternating rhythm) ============ */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.split.reverse .split-visual { order: -1; }
+
+@media (max-width: 900px) {
+  .split { grid-template-columns: 1fr; gap: 32px; }
+  .split.reverse .split-visual { order: 0; }
+}
+
+.pill-tag-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
+.pill-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--bg2); border: 1px solid var(--border);
+  color: var(--text); font-weight: 600; font-size: 0.88rem;
+  padding: 9px 16px; border-radius: var(--radius-pill);
+}
+
+.icon-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.icon-stat-card {
+  background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-card);
+  padding: 22px; text-align: center; transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.icon-stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.icon-stat-card .b-icon { margin: 0 auto 12px; }
+.icon-stat-card h3 { font-size: 0.98rem; margin-bottom: 3px; }
+.icon-stat-card p { color: var(--text2); font-size: 0.84rem; font-weight: 400; }
+
+.info-banner {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-card);
+  padding: 18px 24px; margin-top: 20px; font-size: 0.94rem; color: var(--text2); font-weight: 500;
+}
+
+.stat-box-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 24px 0; }
+.stat-box { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-card); padding: 18px 20px; }
+.stat-box .val { font-weight: 800; font-size: 1.3rem; color: var(--sky3); }
+.stat-box .lbl { color: var(--text2); font-size: 0.84rem; font-weight: 500; margin-top: 2px; }
+
+.check-card { background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-card); padding: 28px; }
+.check-card .eyebrow { color: var(--sky3); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; display: block; margin-bottom: 18px; }
+.check-list { display: flex; flex-direction: column; gap: 16px; }
+.check-list li { display: flex; align-items: flex-start; gap: 12px; }
+.check-list .b-icon { flex-shrink: 0; width: 38px; height: 38px; margin: 0; }
+.check-list strong { display: block; font-size: 0.94rem; color: var(--text); font-weight: 700; }
+.check-list span { display: block; font-size: 0.84rem; color: var(--text2); font-weight: 400; margin-top: 2px; }
+
+/* Decorative device mockup (illustration, not a product screenshot) */
+.device-mockup { position: relative; padding: 20px; }
+.device-mockup .screen {
+  background: linear-gradient(135deg, var(--sky4), var(--bg2));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 22px;
+  box-shadow: var(--shadow-lg);
+}
+.device-mockup .screen-row { display: flex; gap: 10px; margin-bottom: 10px; }
+.device-mockup .screen-row:last-child { margin-bottom: 0; }
+.device-mockup .block { background: #ffffff; border-radius: 8px; height: 56px; flex: 1; box-shadow: var(--shadow-sm); }
+.device-mockup .block.wide { flex: 2.4; background: linear-gradient(120deg, var(--sky), var(--purple)); height: 96px; }
+.device-mockup .float-chip {
+  position: absolute; background: #ffffff; border: 1px solid var(--border); border-radius: 10px;
+  padding: 8px 14px; box-shadow: var(--shadow-md); font-weight: 700; font-size: 0.82rem; color: var(--text);
+}
+.device-mockup .fc1 { top: 4px; right: -6px; }
+.device-mockup .fc2 { bottom: 4px; left: -6px; }
+
+@media (max-width: 900px) {
+  .icon-stat-grid, .stat-box-grid { grid-template-columns: 1fr 1fr; }
+  .device-mockup .float-chip { position: static; display: inline-block; margin: 10px 6px 0 0; }
+}
 
 /* ============ Quality panel (4K section — one prominent visual card instead of bare rows) ============ */
 .quality-panel {
