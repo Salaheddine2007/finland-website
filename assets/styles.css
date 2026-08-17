@@ -428,8 +428,28 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 }
 .device-mockup .screen-row { display: flex; gap: 10px; margin-bottom: 10px; }
 .device-mockup .screen-row:last-child { margin-bottom: 0; }
-.device-mockup .block { background: #ffffff; border-radius: 8px; height: 56px; flex: 1; box-shadow: var(--shadow-sm); }
-.device-mockup .block.wide { flex: 2.4; background: linear-gradient(120deg, var(--sky), var(--purple)); height: 96px; }
+.device-mockup .block {
+  background: #ffffff; border-radius: 8px; height: 56px; flex: 1; box-shadow: var(--shadow-sm);
+  position: relative; overflow: hidden;
+}
+.device-mockup .block::after {
+  content: ''; position: absolute; left: 8px; right: 8px; bottom: 8px; height: 6px;
+  background: var(--border); border-radius: 3px; opacity: 0.7;
+}
+.device-mockup .block.wide {
+  flex: 2.4; height: 96px;
+  background: linear-gradient(120deg, var(--sky), var(--purple));
+  display: flex; align-items: center; justify-content: center;
+}
+.device-mockup .block.wide::after { display: none; }
+.device-mockup .block.wide::before {
+  content: '';
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 16px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.92);
+  margin-left: 4px;
+}
 .device-mockup .float-chip {
   position: absolute; background: #ffffff; border: 1px solid var(--border); border-radius: 10px;
   padding: 8px 14px; box-shadow: var(--shadow-md); font-weight: 700; font-size: 0.82rem; color: var(--text);
