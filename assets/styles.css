@@ -416,6 +416,13 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 }
 .section-dark .container { position: relative; z-index: 1; }
 .section-dark .eyebrow { color: var(--sky2); }
+/* Correction: light-surface cards nested inside a dark section (check-card, benefit-card, etc.)
+   keep their own light-theme text colors - only the section's own direct text should go light */
+.section-dark .check-card .eyebrow,
+.section-dark .benefit-card .eyebrow { color: var(--sky3); }
+.section-dark .step-card h3,
+.section-dark .icon-stat-card h3,
+.section-dark .price-card h3 { color: var(--text); }
 .section-dark h2, .section-dark h3 { color: #ffffff; }
 .section-dark .section-head p, .section-dark > .container > p { color: rgba(255, 255, 255, 0.68); }
 .section-dark .topic-trail ol { color: rgba(255, 255, 255, 0.55); }
