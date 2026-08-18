@@ -706,7 +706,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
   background: var(--border);
   z-index: 0;
 }
-.step-card { position: relative; padding: 0 14px; text-align: center; z-index: 1; }
+.step-card {
+  position: relative;
+  padding: 24px 14px;
+  text-align: center;
+  z-index: 1;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+}
 .step-card::before {
   counter-increment: step;
   content: counter(step);
@@ -723,10 +732,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 .step-card p { color: var(--text2); font-size: 0.86rem; font-weight: 400; }
 
 @media (max-width: 767px) {
-  .step-list { grid-template-columns: 1fr; gap: 28px; }
+  .step-list { grid-template-columns: 1fr; gap: 16px; }
   .step-list::before { display: none; }
-  .step-card { text-align: left; padding: 0 0 0 50px; }
-  .step-card::before { position: absolute; left: 0; top: 0; margin: 0; }
+  .step-card { text-align: left; padding: 18px 18px 18px 64px; }
+  .step-card::before { position: absolute; left: 18px; top: 18px; margin: 0; }
 }
 
 /* ============ Troubleshooting cards ============ */
