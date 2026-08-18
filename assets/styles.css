@@ -534,6 +534,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 .compare-table th.featured-col, .compare-table td:nth-child(3) { background: var(--sky4); }
 .compare-table thead th.featured-col { background: var(--sky3); color: #ffffff; }
 
+/* Horizontal variant: features as column headers, no featured-column highlight, readable-width columns */
+.compare-table-horizontal { min-width: 920px; table-layout: fixed; }
+.compare-table-horizontal td:nth-child(3) { background: transparent; }
+.compare-table-horizontal th, .compare-table-horizontal td { width: 12.5%; white-space: normal; vertical-align: top; }
+.compare-table-horizontal td { color: var(--text2); font-size: 0.88rem; line-height: 1.5; }
+
 /* Simple two-column comparison */
 .vs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .vs-card { border: 1px solid var(--border); border-radius: var(--radius-card); padding: 28px; }
