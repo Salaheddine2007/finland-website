@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
-
 /* ============ Design tokens (single source of truth, light only) ============ */
 :root {
   --bg: #ffffff;
@@ -583,6 +581,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 @media (max-width: 900px) {
   .icon-stat-grid, .stat-box-grid { grid-template-columns: 1fr 1fr; }
   .device-mockup .float-chip { position: static; display: inline-flex; margin: 10px 6px 0 0; }
+}
+
+@media (max-width: 480px) {
+  .icon-stat-grid, .stat-box-grid { grid-template-columns: 1fr; }
+  .quality-panel { padding: 4px 20px; }
 }
 
 /* ============ Quality panel (4K section — one prominent visual card instead of bare rows) ============ */
