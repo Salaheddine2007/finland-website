@@ -29,6 +29,7 @@
   --shadow-sm: 0 2px 8px rgba(17, 24, 39, 0.06);
   --shadow-md: 0 8px 24px rgba(17, 24, 39, 0.10);
   --shadow-lg: 0 16px 40px rgba(17, 24, 39, 0.14);
+  --shadow-glow: 0 12px 32px rgba(74, 158, 232, 0.22), 0 4px 10px rgba(17, 24, 39, 0.08);
 
   --radius-btn: 8px;
   --radius-card: 14px;
@@ -375,6 +376,47 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 .section-head h2 { margin-bottom: 12px; }
 .section-head p { color: var(--text2); font-size: 1.02rem; font-weight: 400; }
 
+/* ============ Dark section variant (deliberate rhythm break, used sparingly) ============ */
+.section-dark {
+  position: relative;
+  background: var(--deep);
+  color: rgba(255, 255, 255, 0.82);
+  overflow: hidden;
+}
+.section-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 15% 0%, rgba(74, 158, 232, 0.22), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(139, 92, 246, 0.16), transparent 60%);
+  pointer-events: none;
+}
+.section-dark .container { position: relative; z-index: 1; }
+.section-dark .eyebrow { color: var(--sky2); }
+.section-dark h2, .section-dark h3 { color: #ffffff; }
+.section-dark .section-head p, .section-dark > .container > p { color: rgba(255, 255, 255, 0.68); }
+.section-dark .topic-trail ol { color: rgba(255, 255, 255, 0.55); }
+.section-dark .topic-trail .current { color: var(--sky2); }
+.section-dark .benefit-card h3 { color: var(--text); }
+
+/* Ambient glow blob (very subtle, used once or twice — not a page-wide pattern) */
+.glow-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  pointer-events: none;
+  opacity: 0.5;
+  animation: glow-drift 14s ease-in-out infinite alternate;
+}
+@keyframes glow-drift {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(24px, -18px) scale(1.08); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .glow-blob { animation: none; }
+}
+
 /* ============ Mobile nav toggle ============ */
 .nav-toggle {
   display: none;
@@ -434,7 +476,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
   background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-card);
   padding: 22px; text-align: center; transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.icon-stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.icon-stat-card:hover { transform: translateY(-3px) scale(1.02); box-shadow: var(--shadow-glow); }
 .icon-stat-card .b-icon { margin: 0 auto 12px; }
 .icon-stat-card h3 { font-size: 0.98rem; margin-bottom: 3px; }
 .icon-stat-card p { color: var(--text2); font-size: 0.84rem; font-weight: 400; }
@@ -552,7 +594,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
   padding: 26px 24px;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
-.benefit-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: var(--sky2); }
+.benefit-card:hover { transform: translateY(-3px) scale(1.02); box-shadow: var(--shadow-glow); border-color: var(--sky2); }
 .benefit-card .b-icon {
   width: 44px; height: 44px;
   border-radius: 10px;
@@ -611,7 +653,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
-.device-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-sm); border-color: var(--sky); }
+.device-card:hover { transform: translateY(-3px) scale(1.03); box-shadow: var(--shadow-glow); border-color: var(--sky); }
 .device-card .d-icon {
   width: 40px; height: 40px; margin: 0 auto 12px;
   background: var(--sky4);
@@ -670,8 +712,15 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 
 /* ============ Pricing cards ============ */
 .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; align-items: stretch; }
-.price-card { background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-card); padding: 30px 26px; display: flex; flex-direction: column; position: relative; box-shadow: var(--shadow-sm); }
-.price-card.recommended { border: 1.5px solid var(--sky); background: var(--sky4); box-shadow: var(--shadow-md); transform: scale(1.02); }
+.price-card { background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius-card); padding: 30px 26px; display: flex; flex-direction: column; position: relative; box-shadow: var(--shadow-sm); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.price-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-glow); }
+.price-card.recommended {
+  border: 1.5px solid var(--sky);
+  background: var(--sky4);
+  box-shadow: 0 0 0 4px rgba(74, 158, 232, 0.10), var(--shadow-lg);
+  transform: scale(1.03);
+}
+.price-card.recommended:hover { transform: scale(1.03) translateY(-3px); box-shadow: 0 0 0 5px rgba(74, 158, 232, 0.14), var(--shadow-lg); }
 .price-card .price-badge {
   position: absolute; top: -12px; left: 26px;
   background: var(--sky3); color: #ffffff;
@@ -755,7 +804,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.article-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.article-card:hover { transform: translateY(-4px) scale(1.015); box-shadow: var(--shadow-glow); }
 .article-card .thumb { height: 5px; background: linear-gradient(90deg, var(--sky), var(--purple)); }
 .article-card .body { padding: 24px; }
 .article-card .tag { color: var(--sky3); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
