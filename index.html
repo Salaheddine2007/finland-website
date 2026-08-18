@@ -51,7 +51,7 @@
     { "@type": "Question", "name": "Mikä on IPTV Suomi?", "acceptedAnswer": { "@type": "Answer", "text": "IPTV Suomi tarkoittaa suomalaisille katsojille suunnattua IPTV-palvelua, joka toimittaa televisiokanavat ja videosisällön internetyhteyden yli tuetuille laitteille." } },
     { "@type": "Question", "name": "Miten IPTV toimii?", "acceptedAnswer": { "@type": "Answer", "text": "IPTV striimaa televisiosisältöä internetyhteyden yli sovelluksen kautta, jolloin erillistä antenni- tai kaapeliliittymää ei tarvita. Laite ottaa yhteyden palveluntarjoajan palvelimeen ja toistaa sisällön reaaliajassa." } },
     { "@type": "Question", "name": "Onko IPTV laillista Suomessa?", "acceptedAnswer": { "@type": "Answer", "text": "IPTV-teknologia itsessään on laillinen tapa toimittaa televisiosisältöä. Vastuu sisällön alkuperästä ja tarvittavista jakeluoikeuksista on aina palveluntarjoajalla — valitse siksi aina läpinäkyvästi toimiva palveluntarjoaja." } },
-    { "@type": "Question", "name": "Paljonko IPTV Suomi maksaa?", "acceptedAnswer": { "@type": "Answer", "text": "Hinnat alkavat 10,99 €/kk yhdellä laitteella. Kaksi laitetta samanaikaisesti maksaa alkaen 19,99 €/kk ja kolme laitetta alkaen 26,99 €/kk. Pidempi tilausjakso pienentää kuukausikohtaista hintaa." } },
+    { "@type": "Question", "name": "Paljonko IPTV Suomi maksaa?", "acceptedAnswer": { "@type": "Answer", "text": "Hinnat alkavat 10,99 €/kk (1 laite). Kaksi laitetta samanaikaisesti maksaa alkaen 19,99 €/kk ja kolme laitetta alkaen 26,99 €/kk. Pidempi tilausjakso pienentää kuukausikohtaista hintaa — tarkat hinnat löydät pakettitaulukosta." } },
     { "@type": "Question", "name": "Mitä IPTV-paketti sisältää?", "acceptedAnswer": { "@type": "Answer", "text": "Paketti sisältää yleensä live-TV:n, VOD-kirjaston ja EPG:n. Tarkka sisältö ja laatutaso voivat vaihdella valitun paketin ja laitteen mukaan." } },
     { "@type": "Question", "name": "Toimiiko IPTV Samsung Smart TV:ssä?", "acceptedAnswer": { "@type": "Answer", "text": "IPTV voidaan yleensä katsoa Samsung Smart TV:llä yhteensopivan sovelluksen kautta, jos television käyttöjärjestelmä tukee sitä." } },
     { "@type": "Question", "name": "Toimiiko IPTV LG TV:ssä?", "acceptedAnswer": { "@type": "Answer", "text": "IPTV voidaan yleensä katsoa LG:n webOS-televisioilla yhteensopivan sovelluksen kautta." } },
@@ -96,14 +96,14 @@
   <div class="glow-blob" aria-hidden="true" style="width:420px;height:420px;top:-140px;left:8%;background:radial-gradient(circle, rgba(74,158,232,0.35), transparent 70%);"></div>
   <div class="glow-blob" aria-hidden="true" style="width:340px;height:340px;top:10%;right:4%;background:radial-gradient(circle, rgba(139,92,246,0.22), transparent 70%);animation-delay:-6s;"></div>
   <div class="hero-logos" aria-hidden="true">
-    <div class="logo-chip p1"><img src="/assets/logos/yle.png" alt="" loading="eager"></div>
-    <div class="logo-chip p2"><img src="/assets/logos/mtv3.png" alt="" loading="eager"></div>
-    <div class="logo-chip p3"><img src="/assets/logos/nelonen.jpg" alt="" loading="eager"></div>
-    <div class="logo-chip p4"><img src="/assets/logos/liv.png" alt="" loading="eager"></div>
-    <div class="logo-chip p5"><img src="/assets/logos/jim.png" alt="" loading="eager"></div>
-    <div class="logo-chip p6"><img src="/assets/logos/kutonen.png" alt="" loading="eager"></div>
-    <div class="logo-chip p7"><img src="/assets/logos/star-channel.png" alt="" loading="eager"></div>
-    <div class="logo-chip p8"><img src="/assets/logos/tv5monde.jpg" alt="" loading="eager"></div>
+    <div class="logo-chip p1"><img src="/assets/logos/yle.png" alt="" loading="lazy" width="92" height="92"></div>
+    <div class="logo-chip p2"><img src="/assets/logos/mtv3.png" alt="" loading="lazy" width="92" height="92"></div>
+    <div class="logo-chip p3"><img src="/assets/logos/nelonen.jpg" alt="" loading="lazy" width="92" height="92"></div>
+    <div class="logo-chip p4"><img src="/assets/logos/liv.png" alt="" loading="lazy" width="92" height="92"></div>
+    <div class="logo-chip p5"><img src="/assets/logos/jim.png" alt="" loading="lazy" width="92" height="92"></div>
+    <div class="logo-chip p6"><img src="/assets/logos/kutonen.png" alt="" loading="lazy" width="92" height="92"></div>
+    <div class="logo-chip p7"><img src="/assets/logos/star-channel.png" alt="" loading="lazy" width="92" height="92"></div>
+    <div class="logo-chip p8"><img src="/assets/logos/tv5monde.jpg" alt="" loading="lazy" width="92" height="92"></div>
   </div>
   <div class="hero-inner">
     <span class="badge"><span class="dot"></span> IPTV-palvelu suomalaisille katsojille</span>
@@ -132,7 +132,11 @@
 
 <!-- ============ LOGO SLIDER ============ -->
 <section class="logo-marquee" aria-label="Kanavabrändit">
-  <div class="marquee-track">
+  <button type="button" class="marquee-pause" id="marqueePause" aria-pressed="false" aria-label="Pysäytä logojen vieritys">
+    <svg class="icon-pause" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+    <svg class="icon-play" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="display:none;"><path d="M8 5v14l11-7z"/></svg>
+  </button>
+  <div class="marquee-track" id="marqueeTrack">
     <div class="marquee-group">
       <div class="marquee-logo"><img src="/assets/logos/yle.png" alt="Yle" loading="lazy" width="120" height="60"></div>
       <div class="marquee-logo"><img src="/assets/logos/mtv3.png" alt="MTV3" loading="lazy" width="120" height="60"></div>
@@ -205,7 +209,7 @@
     <div class="section-head center">
       <span class="eyebrow">Paketit</span>
       <h2>IPTV Suomi hinnat ja paketit</h2>
-      <p>Kolme pakettia samoilla ominaisuuksilla — ero on siinä, kuinka monella laitteella voit katsoa samanaikaisesti. Hinta alkaen 10,99 € / kuukausi.</p>
+      <p>Kolme pakettia samoilla ominaisuuksilla — ero on siinä, kuinka monella laitteella voit katsoa samanaikaisesti. Yksi laite maksaa alkaen 10,99 €/kk, kaksi laitetta alkaen 19,99 €/kk ja kolme laitetta alkaen 26,99 €/kk.</p>
     </div>
     <div class="pricing-grid">
       <div class="price-card">
@@ -225,7 +229,7 @@
         <a href="https://wa.me/32497063717" class="btn btn-outline" target="_blank" rel="noopener">Valitse 1 laite</a>
       </div>
       <div class="price-card recommended">
-        <span class="price-badge">Suosituin</span>
+        <span class="price-badge">Suositeltu</span>
         <h3>2 laitetta</h3>
         <p class="price-note">Katselu kahdella laitteella samanaikaisesti</p>
         <div class="duration-list">
@@ -308,13 +312,13 @@
     <div class="section-head center">
       <span class="eyebrow">Vertailu</span>
       <h2>IPTV Suomi – paketit ja ominaisuudet</h2>
-      <p>Kaikki paketit sisältävät samat ominaisuudet — ero on siinä, kuinka monella laitteella voit katsoa samanaikaisesti.</p>
+      <p>Kaikki paketit sisältävät samat ominaisuudet — ero on siinä, kuinka monella laitteella voit katsoa samanaikaisesti. Urheilun ja catch-upin saatavuus riippuu aina palveluntarjoajan kulloisistakin lähetysoikeuksista kaikissa paketeissa, joten kysy ajantasainen tilanne ennen tilaamista.</p>
     </div>
     <div class="table-scroll">
       <table class="compare-table">
         <caption>Vieritä sivusuunnassa nähdäksesi kaikki paketit</caption>
         <thead>
-          <tr><th scope="col">Ominaisuus</th><th scope="col">1 laite</th><th scope="col" class="featured-col">2 laitetta (suosituin)</th><th scope="col">3 laitetta</th></tr>
+          <tr><th scope="col">Ominaisuus</th><th scope="col">1 laite</th><th scope="col" class="featured-col">2 laitetta (suositeltu)</th><th scope="col">3 laitetta</th></tr>
         </thead>
         <tbody>
           <tr><th scope="row">Hinta alkaen</th><td>10,99 € / kk</td><td>19,99 € / kk</td><td>26,99 € / kk</td></tr>
@@ -919,6 +923,19 @@
       nav.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
     });
+  });
+})();
+
+(function () {
+  var btn = document.getElementById('marqueePause');
+  var track = document.getElementById('marqueeTrack');
+  if (!btn || !track) return;
+  btn.addEventListener('click', function () {
+    var paused = track.classList.toggle('paused');
+    btn.setAttribute('aria-pressed', paused ? 'true' : 'false');
+    btn.setAttribute('aria-label', paused ? 'Jatka logojen vieritystä' : 'Pysäytä logojen vieritys');
+    btn.querySelector('.icon-pause').style.display = paused ? 'none' : '';
+    btn.querySelector('.icon-play').style.display = paused ? '' : 'none';
   });
 })();
 </script>

@@ -255,6 +255,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 
 /* ============ Logo slider (continuous marquee) ============ */
 .logo-marquee {
+  position: relative;
   background: #ffffff;
   border-bottom: 1px solid var(--border);
   padding: 22px 0;
@@ -265,7 +266,28 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
   width: max-content;
   animation: marquee-scroll 28s linear infinite;
 }
-.logo-marquee:hover .marquee-track { animation-play-state: paused; }
+.logo-marquee:hover .marquee-track,
+.marquee-track.paused { animation-play-state: paused; }
+
+.marquee-pause {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--text2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+.marquee-pause:hover { color: var(--sky3); border-color: var(--sky2); }
 .marquee-group { display: flex; align-items: center; flex-shrink: 0; }
 .marquee-logo {
   flex-shrink: 0;
