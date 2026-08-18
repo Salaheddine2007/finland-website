@@ -29,12 +29,29 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "IPTV-palvelu",
+  "provider": { "@type": "Organization", "name": "IPTV Suomi" },
+  "areaServed": "FI",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "EUR",
+    "lowPrice": "10.99",
+    "highPrice": "109.99",
+    "offerCount": "12",
+    "url": "https://suomiiptv.tv/#paketit"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "Mikä on IPTV Suomi?", "acceptedAnswer": { "@type": "Answer", "text": "IPTV Suomi tarkoittaa suomalaisille katsojille suunnattua IPTV-palvelua, joka toimittaa televisiokanavat ja videosisällön internetyhteyden yli tuetuille laitteille." } },
     { "@type": "Question", "name": "Miten IPTV toimii?", "acceptedAnswer": { "@type": "Answer", "text": "IPTV striimaa televisiosisältöä internetyhteyden yli sovelluksen kautta, jolloin erillistä antenni- tai kaapeliliittymää ei tarvita. Laite ottaa yhteyden palveluntarjoajan palvelimeen ja toistaa sisällön reaaliajassa." } },
     { "@type": "Question", "name": "Onko IPTV laillista Suomessa?", "acceptedAnswer": { "@type": "Answer", "text": "IPTV-teknologia itsessään on laillinen tapa toimittaa televisiosisältöä. Vastuu sisällön alkuperästä ja tarvittavista jakeluoikeuksista on aina palveluntarjoajalla — valitse siksi aina läpinäkyvästi toimiva palveluntarjoaja." } },
-    { "@type": "Question", "name": "Paljonko IPTV Suomi maksaa?", "acceptedAnswer": { "@type": "Answer", "text": "Hinta riippuu valitusta tilausjaksosta. Ajantasaisen hinnaston saat suoraan WhatsAppin kautta." } },
+    { "@type": "Question", "name": "Paljonko IPTV Suomi maksaa?", "acceptedAnswer": { "@type": "Answer", "text": "Hinnat alkavat 10,99 €/kk yhdellä laitteella. Kaksi laitetta samanaikaisesti maksaa alkaen 19,99 €/kk ja kolme laitetta alkaen 26,99 €/kk. Pidempi tilausjakso pienentää kuukausikohtaista hintaa." } },
     { "@type": "Question", "name": "Mitä IPTV-paketti sisältää?", "acceptedAnswer": { "@type": "Answer", "text": "Paketti sisältää yleensä live-TV:n, VOD-kirjaston ja EPG:n. Tarkka sisältö ja laatutaso voivat vaihdella valitun paketin ja laitteen mukaan." } },
     { "@type": "Question", "name": "Toimiiko IPTV Samsung Smart TV:ssä?", "acceptedAnswer": { "@type": "Answer", "text": "IPTV voidaan yleensä katsoa Samsung Smart TV:llä yhteensopivan sovelluksen kautta, jos television käyttöjärjestelmä tukee sitä." } },
     { "@type": "Question", "name": "Toimiiko IPTV LG TV:ssä?", "acceptedAnswer": { "@type": "Answer", "text": "IPTV voidaan yleensä katsoa LG:n webOS-televisioilla yhteensopivan sovelluksen kautta." } },
@@ -188,43 +205,60 @@
     <div class="section-head center">
       <span class="eyebrow">Paketit</span>
       <h2>IPTV Suomi hinnat ja paketit</h2>
-      <p>Kolme tilausjaksoa samalla ominaisuuksilla — pidempi jakso pienentää palvelun kuukausikohtaista sitoutumista. Ajantasaisen hinnaston saat suoraan WhatsAppista.</p>
+      <p>Kolme pakettia samoilla ominaisuuksilla — ero on siinä, kuinka monella laitteella voit katsoa samanaikaisesti. Hinta alkaen 10,99 € / kuukausi.</p>
     </div>
     <div class="pricing-grid">
       <div class="price-card">
-        <h3>1 kuukausi</h3>
-        <p class="price-note">Sopii kokeiluun ja lyhyeen sitoutumiseen</p>
+        <h3>1 laite</h3>
+        <p class="price-note">Katselu yhdellä laitteella kerrallaan</p>
+        <div class="duration-list">
+          <div class="duration-row"><span class="d-len">1 kk</span><span class="d-price">10,99 €</span></div>
+          <div class="duration-row"><span class="d-len">3 kk</span><span class="d-price">23,99 €<small>8,00 €/kk</small></span></div>
+          <div class="duration-row featured"><span class="d-len">6 kk<em>Suositeltu</em></span><span class="d-price">40,99 €<small>6,83 €/kk</small></span></div>
+          <div class="duration-row"><span class="d-len">12 kk</span><span class="d-price">59,99 €<small>5,00 €/kk</small></span></div>
+        </div>
         <ul>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Live TV, VOD ja EPG</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> HD, 4K tuetuilla laitteilla</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Tuki WhatsAppissa</li>
         </ul>
-        <a href="https://wa.me/32497063717" class="btn btn-outline" target="_blank" rel="noopener">Kysy hinta</a>
+        <a href="https://wa.me/32497063717" class="btn btn-outline" target="_blank" rel="noopener">Valitse 1 laite</a>
       </div>
       <div class="price-card recommended">
         <span class="price-badge">Suosituin</span>
-        <h3>3 kuukautta</h3>
-        <p class="price-note">Paras tasapaino hinnan ja sitoutumisen välillä</p>
+        <h3>2 laitetta</h3>
+        <p class="price-note">Katselu kahdella laitteella samanaikaisesti</p>
+        <div class="duration-list">
+          <div class="duration-row"><span class="d-len">1 kk</span><span class="d-price">19,99 €</span></div>
+          <div class="duration-row"><span class="d-len">3 kk</span><span class="d-price">35,99 €<small>12,00 €/kk</small></span></div>
+          <div class="duration-row featured"><span class="d-len">6 kk<em>Suositeltu</em></span><span class="d-price">59,99 €<small>10,00 €/kk</small></span></div>
+          <div class="duration-row"><span class="d-len">12 kk</span><span class="d-price">89,99 €<small>7,50 €/kk</small></span></div>
+        </div>
         <ul>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Live TV, VOD ja EPG</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> HD, 4K tuetuilla laitteilla</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Tuki WhatsAppissa</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Edullisempi kuukausikohtaisesti kuin 1 kk</li>
         </ul>
-        <a href="https://wa.me/32497063717" class="btn btn-accent" target="_blank" rel="noopener">Kysy hinta</a>
+        <a href="https://wa.me/32497063717" class="btn btn-accent" target="_blank" rel="noopener">Valitse 2 laitetta</a>
       </div>
       <div class="price-card">
-        <h3>12 kuukautta</h3>
-        <p class="price-note">Pisin jakso, pienin kuukausikohtainen sitoutuminen</p>
+        <h3>3 laitetta</h3>
+        <p class="price-note">Katselu kolmella laitteella samanaikaisesti</p>
+        <div class="duration-list">
+          <div class="duration-row"><span class="d-len">1 kk</span><span class="d-price">26,99 €</span></div>
+          <div class="duration-row"><span class="d-len">3 kk</span><span class="d-price">45,99 €<small>15,33 €/kk</small></span></div>
+          <div class="duration-row featured"><span class="d-len">6 kk<em>Suositeltu</em></span><span class="d-price">79,99 €<small>13,33 €/kk</small></span></div>
+          <div class="duration-row"><span class="d-len">12 kk</span><span class="d-price">109,99 €<small>9,17 €/kk</small></span></div>
+        </div>
         <ul>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Live TV, VOD ja EPG</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> HD, 4K tuetuilla laitteilla</li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Tuki WhatsAppissa</li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Edullisin kuukausikohtainen hinta</li>
         </ul>
-        <a href="https://wa.me/32497063717" class="btn btn-outline" target="_blank" rel="noopener">Kysy hinta</a>
+        <a href="https://wa.me/32497063717" class="btn btn-outline" target="_blank" rel="noopener">Valitse 3 laitetta</a>
       </div>
     </div>
+    <p style="text-align:center;color:var(--text2);font-size:0.86rem;margin-top:20px;">Kuukausihinnat on laskettu jakamalla jakson kokonaishinta kuukausien määrällä. Hinnat sisältävät samat ominaisuudet kaikissa paketeissa — ero on vain samanaikaisten laitteiden määrässä.</p>
   </div>
 </section>
 
@@ -274,15 +308,17 @@
     <div class="section-head center">
       <span class="eyebrow">Vertailu</span>
       <h2>IPTV Suomi – paketit ja ominaisuudet</h2>
-      <p>Kaikki tilausjaksot sisältävät samat ominaisuudet — ero on ainoastaan tilauksen kestossa ja kuukausikohtaisessa hinnassa.</p>
+      <p>Kaikki paketit sisältävät samat ominaisuudet — ero on siinä, kuinka monella laitteella voit katsoa samanaikaisesti.</p>
     </div>
     <div class="table-scroll">
       <table class="compare-table">
         <caption>Vieritä sivusuunnassa nähdäksesi kaikki paketit</caption>
         <thead>
-          <tr><th scope="col">Ominaisuus</th><th scope="col">1 kk</th><th scope="col" class="featured-col">3 kk (suosituin)</th><th scope="col">12 kk</th></tr>
+          <tr><th scope="col">Ominaisuus</th><th scope="col">1 laite</th><th scope="col" class="featured-col">2 laitetta (suosituin)</th><th scope="col">3 laitetta</th></tr>
         </thead>
         <tbody>
+          <tr><th scope="row">Hinta alkaen</th><td>10,99 € / kk</td><td>19,99 € / kk</td><td>26,99 € / kk</td></tr>
+          <tr><th scope="row">Samanaikaiset laitteet</th><td>1</td><td>2</td><td>3</td></tr>
           <tr><th scope="row">Live TV</th><td class="yes">Kyllä</td><td class="yes">Kyllä</td><td class="yes">Kyllä</td></tr>
           <tr><th scope="row">VOD (elokuvat &amp; sarjat)</th><td class="yes">Kyllä</td><td class="yes">Kyllä</td><td class="yes">Kyllä</td></tr>
           <tr><th scope="row">HD</th><td class="yes">Kyllä</td><td class="yes">Kyllä</td><td class="yes">Kyllä</td></tr>
@@ -290,7 +326,6 @@
           <tr><th scope="row">EPG</th><td class="yes">Kyllä</td><td class="yes">Kyllä</td><td class="yes">Kyllä</td></tr>
           <tr><th scope="row">Catch-up</th><td class="no">Kysy saatavuus</td><td class="no">Kysy saatavuus</td><td class="no">Kysy saatavuus</td></tr>
           <tr><th scope="row">Urheilu</th><td class="no">Sisällöstä riippuen</td><td class="no">Sisällöstä riippuen</td><td class="no">Sisällöstä riippuen</td></tr>
-          <tr><th scope="row">Laitetuki</th><td class="yes">Kyllä</td><td class="yes">Kyllä</td><td class="yes">Kyllä</td></tr>
           <tr><th scope="row">Tuki</th><td class="yes">WhatsApp</td><td class="yes">WhatsApp</td><td class="yes">WhatsApp</td></tr>
         </tbody>
       </table>
@@ -739,7 +774,7 @@
       </details>
       <details class="faq-item">
         <summary>Paljonko IPTV Suomi maksaa?</summary>
-        <p>Hinta riippuu valitusta tilausjaksosta. Ajantasaisen hinnaston saat suoraan WhatsAppin kautta.</p>
+        <p>Hinnat alkavat 10,99 €/kk (1 laite). Kaksi laitetta samanaikaisesti maksaa alkaen 19,99 €/kk ja kolme laitetta alkaen 26,99 €/kk. Pidempi tilausjakso pienentää kuukausikohtaista hintaa — tarkat hinnat löydät pakettitaulukosta.</p>
       </details>
       <details class="faq-item">
         <summary>Mitä IPTV-paketti sisältää?</summary>

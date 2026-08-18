@@ -729,6 +729,21 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .btn:focus-visible
 }
 .price-card h3 { font-size: 1.15rem; margin-bottom: 4px; }
 .price-card .price-note { color: var(--text2); font-size: 0.88rem; font-weight: 500; margin-bottom: 18px; }
+
+.duration-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 22px; }
+.duration-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 12px; border-radius: 8px; border: 1px solid transparent;
+}
+.duration-row.featured { background: #ffffff; border-color: var(--sky); box-shadow: var(--shadow-sm); }
+.duration-row .d-len { font-size: 0.88rem; font-weight: 600; color: var(--text); display: flex; align-items: center; gap: 6px; }
+.duration-row .d-len em {
+  font-style: normal; font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+  color: #ffffff; background: var(--sky3); padding: 2px 6px; border-radius: 999px;
+}
+.duration-row .d-price { font-size: 0.98rem; font-weight: 700; color: var(--text); text-align: right; }
+.duration-row .d-price small { display: block; font-size: 0.72rem; font-weight: 500; color: var(--text2); }
+
 .price-card ul { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; flex: 1; }
 .price-card li { display: flex; align-items: flex-start; gap: 9px; font-size: 0.92rem; color: var(--text); font-weight: 400; }
 .price-card li svg { flex-shrink: 0; color: var(--green-deep); margin-top: 3px; }
