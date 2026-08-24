@@ -2,8 +2,8 @@
   "next_index": 0,
   "source": "assets/iptv_broad-match_fi_2026-05-16.xlsx, deduped against tilaaiptv.com's keyword_tracking.json (72 already-covered terms) and iptvviking.tv's cross-site terms (nordic iptv, iptv nordic, nordic one iptv)",
   "keywords": [
-    { "keyword": "android iptv", "volume": 30, "kd": 0, "status": "pending" },
-    { "keyword": "best iptv apk", "volume": 30, "kd": 0, "status": "pending" },
+    { "keyword": "android iptv", "volume": 30, "kd": 0, "status": "done", "posted_date": "2026-08-16", "url": "/blog/android-iptv/" },
+    { "keyword": "best iptv apk", "volume": 30, "kd": 0, "status": "done", "posted_date": "2026-08-24", "url": "/blog/best-iptv-apk/" },
     { "keyword": "dna tv iptv", "volume": 30, "kd": 0, "status": "pending" },
     { "keyword": "paras iptv", "volume": 140, "kd": 7, "status": "pending" },
     { "keyword": "iptv laillisuus", "volume": 320, "kd": 12, "status": "pending" },
