@@ -51,36 +51,46 @@
       "keyword": "iptv digiboksi",
       "volume": 260,
       "kd": 12,
-      "status": "pending",
-      "trunk": "devices_boxes"
+      "status": "done",
+      "trunk": "devices_boxes",
+      "posted_date": "2026-08-28",
+      "url": "/blog/iptv-digiboksi/"
     },
     {
       "keyword": "suomi iptv kokemuksia",
       "volume": 110,
       "kd": 20,
-      "status": "pending",
-      "trunk": "reviews_comparisons"
+      "status": "done",
+      "trunk": "reviews_comparisons",
+      "posted_date": "2026-08-29",
+      "url": "/blog/suomi-iptv-kokemuksia/"
     },
     {
       "keyword": "iptv boksi gigantti",
       "volume": 140,
       "kd": 25,
-      "status": "pending",
-      "trunk": "devices_boxes"
+      "status": "done",
+      "trunk": "devices_boxes",
+      "posted_date": "2026-08-30",
+      "url": "/blog/iptv-boksi-gigantti/"
     },
     {
       "keyword": "telia iptv",
       "volume": 140,
       "kd": 25,
-      "status": "pending",
-      "trunk": "general"
+      "status": "done",
+      "trunk": "general",
+      "posted_date": "2026-08-31",
+      "url": "/blog/telia-iptv/"
     },
     {
       "keyword": "smart iptv",
       "volume": 320,
       "kd": 26,
-      "status": "pending",
-      "trunk": "apps_players"
+      "status": "done",
+      "trunk": "apps_players",
+      "posted_date": "2026-09-01",
+      "url": "/blog/smart-iptv/"
     },
     {
       "keyword": "suomen iptv kanavat",
