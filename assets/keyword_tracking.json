@@ -96,8 +96,10 @@
       "keyword": "suomen iptv kanavat",
       "volume": 50,
       "kd": 26,
-      "status": "pending",
-      "trunk": "channels_content"
+      "status": "done",
+      "trunk": "channels_content",
+      "posted_date": "2026-09-02",
+      "url": "/blog/suomen-iptv-kanavat/"
     },
     {
       "keyword": "iptv smarters pro",
