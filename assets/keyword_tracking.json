@@ -105,8 +105,10 @@
       "keyword": "iptv smarters pro",
       "volume": 1000,
       "kd": 27,
-      "status": "pending",
-      "trunk": "apps_players"
+      "status": "done",
+      "trunk": "apps_players",
+      "posted_date": "2026-09-02",
+      "url": "/blog/iptv-smarters-pro/"
     },
     {
       "keyword": "iptv smarters",
