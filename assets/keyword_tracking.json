@@ -114,8 +114,10 @@
       "keyword": "iptv smarters",
       "volume": 720,
       "kd": 27,
-      "status": "pending",
-      "trunk": "apps_players"
+      "status": "done",
+      "trunk": "apps_players",
+      "posted_date": "2026-09-03",
+      "url": "/blog/iptv-smarters/"
     },
     {
       "keyword": "dna iptv",
