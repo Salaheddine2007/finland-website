@@ -123,8 +123,10 @@
       "keyword": "dna iptv",
       "volume": 110,
       "kd": 31,
-      "status": "pending",
-      "trunk": "general"
+      "status": "done",
+      "trunk": "general",
+      "posted_date": "2026-09-03",
+      "url": "/blog/dna-iptv/"
     },
     {
       "keyword": "iptv suomi kanavat",
