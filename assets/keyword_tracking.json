@@ -132,7 +132,9 @@
       "keyword": "iptv suomi kanavat",
       "volume": 50,
       "kd": 31,
-      "status": "pending",
+      "status": "done",
+      "posted_date": "2026-09-04",
+      "url": "/blog/iptv-suomi-kanavat/",
       "trunk": "channels_content"
     },
     {
