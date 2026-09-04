@@ -141,14 +141,19 @@
       "keyword": "iptv dna",
       "volume": 110,
       "kd": 33,
-      "status": "pending",
+      "status": "done",
+      "posted_date": "2026-09-03",
+      "url": "/blog/dna-iptv/",
+      "note": "word-order duplicate of \"dna iptv\" (same intent/volume) - merged into existing post instead of publishing near-duplicate content",
       "trunk": "general"
     },
     {
       "keyword": "iptv elisa",
       "volume": 140,
       "kd": 34,
-      "status": "pending",
+      "status": "done",
+      "posted_date": "2026-09-04",
+      "url": "/blog/iptv-elisa/",
       "trunk": "general"
     },
     {
