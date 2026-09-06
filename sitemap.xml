@@ -97,6 +97,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://suomiiptv.tv/blog/dna-iptv/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://suomiiptv.tv/blog/iptv-suomi-kanavat/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -116,6 +122,12 @@
   </url>
   <url>
     <loc>https://suomiiptv.tv/blog/player-iptv-windows/</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://suomiiptv.tv/blog/iptv-application/</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
