@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://suomiiptv.tv/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://suomiiptv.tv/blog/</loc><lastmod>2026-09-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://suomiiptv.tv/</loc><lastmod>2026-09-11</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://suomiiptv.tv/blog/</loc><lastmod>2026-09-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url>
     <loc>https://suomiiptv.tv/blog/android-iptv/</loc>
     <lastmod>2026-08-16</lastmod>
@@ -63,31 +63,25 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://suomiiptv.tv/blog/suomen-iptv-kanavat/</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://suomiiptv.tv/blog/iptv-smarters-pro/</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://suomiiptv.tv/blog/suomen-iptv-kanavat/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://suomiiptv.tv/blog/dna-iptv/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://suomiiptv.tv/blog/iptv-smarters/</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://suomiiptv.tv/blog/dna-iptv/</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://suomiiptv.tv/blog/dna-iptv/</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -111,13 +105,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://suomiiptv.tv/blog/player-iptv-windows/</loc>
+    <loc>https://suomiiptv.tv/blog/iptv-application/</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://suomiiptv.tv/blog/iptv-application/</loc>
+    <loc>https://suomiiptv.tv/blog/player-iptv-windows/</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -135,25 +129,25 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://suomiiptv.tv/blog/kodi-simple-iptv/</loc>
-    <lastmod>2026-09-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://suomiiptv.tv/blog/dna-iptv-kanavat-ei-nay/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://suomiiptv.tv/blog/iptv-turkiye/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://suomiiptv.tv/blog/kodi-simple-iptv/</loc>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://suomiiptv.tv/blog/best-iptv-app-samsung-smart-tv/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://suomiiptv.tv/blog/iptv-turkiye/</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -167,6 +161,12 @@
   <url>
     <loc>https://suomiiptv.tv/blog/best-iptv-service/</loc>
     <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://suomiiptv.tv/blog/best-kodi-iptv-client/</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
