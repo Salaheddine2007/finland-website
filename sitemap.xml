@@ -39,20 +39,14 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://suomiiptv.tv/blog/dna-iptv/</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://suomiiptv.tv/blog/dna-iptv/</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://suomiiptv.tv/blog/dna-iptv-kanavat-ei-nay/</loc>
     <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://suomiiptv.tv/blog/dna-iptv/</loc>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -70,6 +64,12 @@
   </url>
   <url>
     <loc>https://suomiiptv.tv/blog/free-iptv-github/</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://suomiiptv.tv/blog/free-iptv-m3u-reddit/</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -111,12 +111,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://suomiiptv.tv/blog/iptv-smarters/</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://suomiiptv.tv/blog/iptv-smarters-player/</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -125,6 +119,12 @@
   <url>
     <loc>https://suomiiptv.tv/blog/iptv-smarters-pro/</loc>
     <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://suomiiptv.tv/blog/iptv-smarters/</loc>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
