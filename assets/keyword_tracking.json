@@ -303,10 +303,11 @@
       "keyword": "french iptv",
       "volume": 30,
       "kd": 0,
-      "status": "pending",
-      "posted_date": null,
+      "status": "done",
+      "posted_date": "2026-09-13",
       "post_id": null,
-      "trunk": "general"
+      "trunk": "general",
+      "url": "/blog/french-iptv/"
     },
     {
       "keyword": "gse iptv chromecast",
