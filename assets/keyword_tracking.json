@@ -440,10 +440,11 @@
       "keyword": "iptv lg webos",
       "volume": 30,
       "kd": 0,
-      "status": "pending",
-      "posted_date": null,
+      "status": "done",
+      "posted_date": "2026-09-20",
       "post_id": null,
-      "trunk": "general"
+      "trunk": "general",
+      "url": "/blog/iptv-lg-webos/"
     },
     {
       "keyword": "iptv list",
