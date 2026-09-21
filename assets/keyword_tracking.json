@@ -450,9 +450,10 @@
       "keyword": "iptv list",
       "volume": 30,
       "kd": 0,
-      "status": "pending",
-      "posted_date": null,
+      "status": "done",
+      "posted_date": "2026-09-21",
       "post_id": null,
+      "url": "/blog/iptv-list/",
       "trunk": "general"
     },
     {
