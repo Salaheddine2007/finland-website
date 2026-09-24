@@ -51,12 +51,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://suomiiptv.tv/blog/dna-iptv/</loc>
-    <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://suomiiptv.tv/blog/dna-tv-iptv/</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -251,6 +245,12 @@
   <url>
     <loc>https://suomiiptv.tv/blog/iptv-smarters-player/</loc>
     <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://suomiiptv.tv/blog/iptv-smarters-pro-m3u/</loc>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
