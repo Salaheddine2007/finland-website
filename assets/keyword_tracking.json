@@ -649,9 +649,9 @@
       "keyword": "my iptv app",
       "volume": 30,
       "kd": 0,
-      "status": "pending",
-      "posted_date": null,
-      "post_id": null,
+      "status": "done",
+      "posted_date": "2026-09-30",
+      "url": "/blog/my-iptv-app/",
       "trunk": "general"
     },
     {
