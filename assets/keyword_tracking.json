@@ -698,9 +698,10 @@
       "keyword": "smart iptv philips",
       "volume": 30,
       "kd": 0,
-      "status": "pending",
-      "posted_date": null,
+      "status": "done",
+      "posted_date": "2026-10-03",
       "post_id": null,
+      "url": "/blog/smart-iptv-philips/",
       "trunk": "apps_players"
     },
     {
