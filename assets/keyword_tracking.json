@@ -610,10 +610,11 @@
       "keyword": "iptv плеер для пк",
       "volume": 30,
       "kd": 0,
-      "status": "pending",
+      "status": "skipped",
       "posted_date": null,
       "post_id": null,
-      "trunk": "general"
+      "trunk": "general",
+      "skip_reason": "non-Latin script (Russian), unsuitable for Finnish-language article content"
     },
     {
       "keyword": "kodi iptv",
@@ -718,10 +719,11 @@
       "keyword": "smarters iptv samsung tv",
       "volume": 30,
       "kd": 0,
-      "status": "pending",
-      "posted_date": null,
+      "status": "done",
+      "posted_date": "2026-10-04",
       "post_id": null,
-      "trunk": "apps_players"
+      "trunk": "apps_players",
+      "url": "/blog/smarters-iptv-samsung-tv/"
     },
     {
       "keyword": "stb iptv",
