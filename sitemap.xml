@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://suomiiptv.tv/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://suomiiptv.tv/blog/</loc><lastmod>2026-10-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://suomiiptv.tv/</loc><lastmod>2026-10-05</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://suomiiptv.tv/blog/</loc><lastmod>2026-10-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://suomiiptv.tv/blog/android-iptv/</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://suomiiptv.tv/blog/basta-iptv-sverige/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://suomiiptv.tv/blog/best-iptv-apk/</loc><lastmod>2026-08-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -9,7 +9,6 @@
   <url><loc>https://suomiiptv.tv/blog/best-iptv-service/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://suomiiptv.tv/blog/best-kodi-iptv-client/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://suomiiptv.tv/blog/dna-iptv-kanavat-ei-nay/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://suomiiptv.tv/blog/dna-iptv/</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://suomiiptv.tv/blog/dna-iptv/</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://suomiiptv.tv/blog/dna-tv-iptv/</loc><lastmod>2026-08-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://suomiiptv.tv/blog/finnish-iptv-channels/</loc><lastmod>2026-09-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -76,5 +75,6 @@
   <url><loc>https://suomiiptv.tv/blog/stb-iptv/</loc><lastmod>2026-10-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://suomiiptv.tv/blog/suomen-iptv-kanavat/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://suomiiptv.tv/blog/suomi-iptv-kokemuksia/</loc><lastmod>2026-08-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://suomiiptv.tv/blog/svenska-kanaler-iptv/</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://suomiiptv.tv/blog/telia-iptv/</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

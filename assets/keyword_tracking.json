@@ -739,10 +739,10 @@
       "keyword": "svenska kanaler iptv",
       "volume": 30,
       "kd": 0,
-      "status": "pending",
-      "posted_date": null,
-      "post_id": null,
-      "trunk": "general"
+      "status": "done",
+      "posted_date": "2026-10-05",
+      "trunk": "general",
+      "url": "/blog/svenska-kanaler-iptv/"
     },
     {
       "keyword": "vu iptv",
