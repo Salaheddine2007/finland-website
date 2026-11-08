@@ -1412,10 +1412,11 @@
       "keyword": "iptv android tv box",
       "volume": 20,
       "kd": 0,
-      "status": "pending",
-      "posted_date": null,
+      "status": "done",
+      "posted_date": "2026-11-08",
       "post_id": null,
-      "trunk": "devices_boxes"
+      "trunk": "devices_boxes",
+      "url": "/blog/iptv-android-tv-box/"
     },
     {
       "keyword": "iptv app android tv",
