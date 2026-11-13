@@ -1502,9 +1502,10 @@
       "keyword": "iptv balkan",
       "volume": 20,
       "kd": 0,
-      "status": "pending",
-      "posted_date": null,
+      "status": "done",
+      "posted_date": "2026-11-13",
       "post_id": null,
+      "url": "/blog/iptv-balkan/",
       "trunk": "general"
     },
     {
